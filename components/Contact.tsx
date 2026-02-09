@@ -11,8 +11,8 @@ const Contact: React.FC = () => {
           Always open to new opportunities, collaborations, and creative challenges. Let’s work together to bring your ideas to life.
         </p>
 
-        <a 
-          href="mailto:your@email.com" 
+        <a
+          href="mailto:your@email.com"
           className="inline-flex items-center gap-3 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-lg hover:bg-blue-50 transition-all shadow-2xl mb-24"
         >
           <Mail size={20} className="text-blue-600" />
@@ -40,18 +40,18 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="mt-24 pt-12 border-t border-blue-400/20 flex flex-col md:flex-row justify-between items-center gap-6 text-blue-200 text-sm">
-           <div className="flex gap-8">
-              <a href="#" className="hover:text-white transition-colors">Home</a>
-              <a href="#about" className="hover:text-white transition-colors">About</a>
-              <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
-              <a href="#services" className="hover:text-white transition-colors">Blog</a>
-              <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-           </div>
-           <p>© 2025 Elian Ross. All rights reserved.</p>
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-white transition-colors">Home</a>
+            <a href="#about" className="hover:text-white transition-colors">About</a>
+            <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
+            <a href="#services" className="hover:text-white transition-colors">Blog</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+          </div>
+          <p>© {new Date().getFullYear()} Abdisa Kebe. All rights reserved.</p>
         </div>
 
         <div className="mt-20 overflow-hidden pointer-events-none select-none">
-           <span className="text-[20vw] font-serif font-bold italic text-blue-500/30 whitespace-nowrap leading-none block -mb-20">Elian Ross</span>
+          <span className="text-[15vw] font-serif font-bold italic text-blue-500/30 whitespace-nowrap leading-none block ">Abdisa</span>
         </div>
       </div>
     </section>

@@ -24,15 +24,15 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-12 duration-700 delay-200">
-            <a 
-              href="#portfolio" 
+            <a
+              href="#portfolio"
               className="group px-8 py-4 bg-slate-900 text-white rounded-full font-semibold flex items-center gap-2 hover:bg-blue-600 transition-all shadow-xl shadow-slate-200"
             >
               View My Work
               <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-full font-semibold hover:border-blue-300 hover:bg-blue-50 transition-all"
             >
               Hire Me
@@ -40,20 +40,20 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="mt-20 flex flex-col items-center animate-in fade-in duration-1000 delay-300">
-             <div className="relative inline-block mb-4">
-                <img 
-                  src="https://picsum.photos/seed/elian/400/400" 
-                  alt="Elian Ross" 
-                  className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-[3rem] shadow-2xl rotate-3"
-                />
-                <div className="absolute -bottom-4 -left-4 bg-white p-3 rounded-2xl shadow-xl flex items-center gap-2">
-                   <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse" />
-                   <span className="text-xs font-bold text-slate-700 uppercase">Available for work</span>
-                </div>
-             </div>
-             <p className="text-slate-500 italic text-sm mt-8 max-w-sm">
-                Passionate about creating intuitive digital experiences that connect users with value.
-             </p>
+            <div className="relative inline-block mb-4">
+              <img
+                src="https://picsum.photos/seed/elian/400/400"
+                alt="Abdisa Kebe"
+                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-[3rem] shadow-2xl rotate-3"
+              />
+              <div className="absolute -bottom-4 -left-4 bg-white p-3 rounded-2xl shadow-xl flex items-center gap-2">
+                <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse" />
+                <span className="text-xs font-bold text-slate-700 uppercase">Available for work</span>
+              </div>
+            </div>
+            <p className="text-slate-500 italic text-sm mt-8 max-w-sm">
+              Passionate about creating intuitive digital experiences that connect users with value.
+            </p>
           </div>
         </div>
       </div>
