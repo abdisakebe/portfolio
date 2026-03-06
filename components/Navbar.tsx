@@ -27,14 +27,14 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md py-3 border-b border-slate-100 dark:border-slate-800 shadow-sm"
+          ? "bg-white/80 backdrop-blur-md py-3 border-b border-slate-100 shadow-sm"
           : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link
           to="/"
-          className="font-serif text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+          className="font-serif text-2xl font-bold tracking-tight text-slate-900"
         >
           Abdisa Kebe
         </Link>
@@ -51,8 +51,8 @@ const Navbar: React.FC = () => {
                 to={link.href}
                 className={`text-sm font-medium transition-colors ${
                   isActive
-                    ? "text-blue-600 dark:text-blue-400 font-bold"
-                    : "text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+                    ? "text-blue-600 font-bold"
+                    : "text-slate-600 hover:text-blue-600"
                 }`}
               >
                 {link.name}
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
                 onClick={(e) => {
                   if (pathname === "/") {
                     e.preventDefault();
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
           })}
           <Link
             to="/contact"
-            className="px-5 py-2.5 bg-slate-900 dark:bg-white dark:text-slate-900 text-white text-sm font-medium rounded-full hover:bg-blue-600 dark:hover:bg-blue-500 dark:hover:text-white transition-all shadow-lg shadow-slate-200 dark:shadow-none"
+            className="px-5 py-2.5 bg-slate-900 text-white text-sm font-medium rounded-full hover:bg-blue-600 transition-all shadow-lg shadow-slate-200"
           >
             Get in Touch
           </Link>
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2 text-slate-600 dark:text-slate-400"
+          className="md:hidden p-2 text-slate-600"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -104,14 +104,14 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 p-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 p-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
           {navLinks.map((link) => {
             const isContact = link.href === "/contact";
             return isContact ? (
               <Link
                 key={link.name}
                 to="/contact"
-                className="text-lg font-medium text-slate-600 dark:text-slate-400"
+                className="text-lg font-medium text-slate-600"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-medium text-slate-600 dark:text-slate-400"
+                className="text-lg font-medium text-slate-600"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
