@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Linkedin, Github, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -16,13 +17,13 @@ const Footer: React.FC = () => {
           challenges. Let’s work together to bring your ideas to life.
         </p>
 
-        <a
-          href="mailto:your@email.com"
+        <Link
+          to="/contact"
           className="inline-flex items-center gap-3 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-lg hover:bg-blue-50 transition-all shadow-2xl mb-24"
         >
           <Mail size={20} className="text-blue-600" />
           Get in Touch
-        </a>
+        </Link>
 
         <div className="grid md:grid-cols-3 gap-12 text-left border-t border-blue-400/30 pt-16">
           <div>

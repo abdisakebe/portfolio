@@ -85,16 +85,6 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-12 animate-in fade-in slide-in-from-left-4 duration-500">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium mb-8 group"
-          >
-            <ArrowLeft
-              size={20}
-              className="transition-transform group-hover:-translate-x-1"
-            />
-            Back to Portfolio
-          </Link>
           <h1 className="text-5xl md:text-7xl font-serif text-slate-900 dark:text-white mb-6 italic">
             Get in Touch
           </h1>

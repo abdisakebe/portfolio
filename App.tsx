@@ -34,7 +34,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen selection:bg-blue-100 dark:bg-slate-950">
+      <div className="min-h-screen selection:bg-blue-100">
         <Navbar />
         <main className="pt-16 md:pt-20">
           <Routes>
